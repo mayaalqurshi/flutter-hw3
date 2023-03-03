@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hw3/pages/page3.dart';
 
 class page2 extends StatelessWidget {
   const page2({super.key});
@@ -79,7 +80,14 @@ class page2 extends StatelessWidget {
                 height: 50,
                 width: 380,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const page3(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xfff7c745),
                   ),

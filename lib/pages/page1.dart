@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hw3/pages/page2.dart';
 
 class page1 extends StatelessWidget {
   const page1({super.key});
@@ -33,7 +34,7 @@ class page1 extends StatelessWidget {
       ),
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding: const EdgeInsets.all(16),
           child: Center(
               child: Column(
             children: [
@@ -61,18 +62,19 @@ class page1 extends StatelessWidget {
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: const [
                               Text(
                                 "Monthly",
                                 style: TextStyle(
-                                  fontSize: 18,
+                                  fontSize: 16,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
                               Text(
                                 "4.99/mo",
                                 style: TextStyle(
-                                  fontSize: 18,
+                                  fontSize: 16,
                                   fontWeight: FontWeight.w400,
                                 ),
                               ),
@@ -95,18 +97,19 @@ class page1 extends StatelessWidget {
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: const [
                               Text(
                                 "Annual Save 50%",
                                 style: TextStyle(
-                                  fontSize: 18,
+                                  fontSize: 16,
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
                               Text(
                                 "39.99/year",
                                 style: TextStyle(
-                                  fontSize: 18,
+                                  fontSize: 16,
                                   fontWeight: FontWeight.w400,
                                 ),
                               ),
@@ -124,14 +127,18 @@ class page1 extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
                         Icon(
                           Icons.check,
                           size: 20,
                           color: Colors.red,
                         ),
+                        SizedBox(
+                          width: 10,
+                        ),
                         Text(
-                          "Recommendations personalized to your taste.",
+                          "Recommendations personalized to \nyour taste.",
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.w200,
@@ -141,12 +148,19 @@ class page1 extends StatelessWidget {
                         )
                       ],
                     ),
+                    const SizedBox(
+                      height: 10,
+                    ),
                     Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
                         Icon(
                           Icons.check,
                           size: 20,
                           color: Colors.red,
+                        ),
+                        SizedBox(
+                          width: 10,
                         ),
                         Text(
                           "Find and save recipes effortlessly.",
@@ -159,12 +173,19 @@ class page1 extends StatelessWidget {
                         )
                       ],
                     ),
+                    const SizedBox(
+                      height: 10,
+                    ),
                     Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
                         Icon(
                           Icons.check,
                           size: 20,
                           color: Colors.red,
+                        ),
+                        SizedBox(
+                          width: 10,
                         ),
                         Text(
                           "Immersive design and food photography.",
@@ -177,15 +198,22 @@ class page1 extends StatelessWidget {
                         )
                       ],
                     ),
+                    const SizedBox(
+                      height: 10,
+                    ),
                     Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
                         Icon(
                           Icons.check,
                           size: 20,
                           color: Colors.red,
                         ),
+                        SizedBox(
+                          width: 10,
+                        ),
                         Text(
-                          "Expertly tested recipes for every ingredient in your kitchen",
+                          "Expertly tested recipes for every \ningredient in your kitchen",
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.w200,
@@ -195,15 +223,22 @@ class page1 extends StatelessWidget {
                         )
                       ],
                     ),
+                    const SizedBox(
+                      height: 10,
+                    ),
                     Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
                         Icon(
                           Icons.check,
                           size: 20,
                           color: Colors.red,
                         ),
+                        SizedBox(
+                          width: 10,
+                        ),
                         Text(
-                          "Full access to epicurious.com and bonappetit.com",
+                          "Full access to epicurious.com and \nbonappetit.com",
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.w200,
@@ -239,24 +274,36 @@ class page1 extends StatelessWidget {
               ),
               Column(
                 children: const [
-                  Text("Subscribe today for just",
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w300,
-                        color: Colors.black,
-                      )),
-                  Text("4.99 per month",
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w500,
-                        color: Colors.black,
-                      )),
-                  Text("Get 7 Days Free",
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w300,
-                        color: Colors.black,
-                      )),
+                  Text(
+                    "Subscribe today for just",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w300,
+                      color: Colors.black,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    "4.99 per month",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.black,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    "Get 7 Days Free",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w300,
+                      color: Colors.black,
+                    ),
+                  ),
                 ],
               ),
               const SizedBox(
@@ -272,7 +319,9 @@ class page1 extends StatelessWidget {
                 height: 48,
                 width: 400,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const page2()));
+                  },
                   style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10),

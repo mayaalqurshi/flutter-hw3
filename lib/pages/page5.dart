@@ -8,6 +8,7 @@ class page5 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
+        shadowColor: Colors.transparent,
         leading: IconButton(
           icon: const Icon(
             Icons.arrow_back_outlined,
@@ -26,7 +27,7 @@ class page5 extends StatelessWidget {
               const Text(
                 "Basic Information",
                 style: TextStyle(
-                  fontSize: 18,
+                  fontSize: 16,
                   fontWeight: FontWeight.normal,
                   color: Color(0xff348770),
                 ),
@@ -69,16 +70,16 @@ class page5 extends StatelessWidget {
                   ),
                 ),
               ),
-              FloatingActionButton(
-                onPressed: () {},
-                backgroundColor: const Color(0xffedeff1),
-                child: const Icon(
-                  Icons.arrow_forward_outlined,
-                  color: Colors.grey,
-                ),
-              )
             ],
           ),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: const Color(0xffedeff1),
+        child: const Icon(
+          Icons.arrow_forward_outlined,
+          color: Colors.grey,
         ),
       ),
     );

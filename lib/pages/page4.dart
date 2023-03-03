@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hw3/pages/page5.dart';
 
 class page4 extends StatelessWidget {
   const page4({super.key});
@@ -50,7 +51,14 @@ class page4 extends StatelessWidget {
                 height: 60,
                 width: 400,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const page5(),
+                      ),
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.black,
                     shape: const RoundedRectangleBorder(
